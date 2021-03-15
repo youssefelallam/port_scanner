@@ -3,7 +3,7 @@ import socket
 host = input("Please enter the ip address : ")
 
 try:
-    for port in range(1,2000):
+    for port in range(1,1024):
         s = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         socket.setdefaulttimeout(0.5)
         result = s.connect_ex((host,port))
